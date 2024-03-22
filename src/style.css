@@ -46,6 +46,7 @@ button{
 }
 button:hover{
     margin-bottom: 15px;
+    color: white;
 }
 #content{
     
