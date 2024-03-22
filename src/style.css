@@ -5,11 +5,16 @@
 }
 
 body{
-    background-color: brown;
+    background-image: url('/src/assets/vishwas-katti-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
 
 header{
     border-bottom: 3px solid rgb(0, 0, 0, 0.8);
+    background-color: rgba(217, 204, 135, 0.3);
 
 }
 .banner{
@@ -36,4 +41,8 @@ button{
     background-color: rgb(255, 255, 255);
     padding: 7px 35px;
     font-size: 1.6rem;
+}
+
+#content{
+    
 }
