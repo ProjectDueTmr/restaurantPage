@@ -5,16 +5,14 @@
 }
 
 body{
-    background-image: url('/src/assets/vishwas-katti-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
 }
 
 header{
     border-bottom: 3px solid rgb(0, 0, 0, 0.8);
-    background-color: rgba(217, 204, 135, 0.3);
+    background-color: rgba(55, 66, 47, 0.7);
 
 }
 .banner{
@@ -26,6 +24,7 @@ header{
 .title{
     margin-left: 50px;
     font-size: 2rem;
+    color: white;
 }
 
 nav{
@@ -33,16 +32,26 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
     gap: 1rem;
 }
 button{
     color: black;
     height: auto;
-    background-color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+    border-bottom: 3px solid white;
     padding: 7px 35px;
     font-size: 1.6rem;
 }
-
+button:hover{
+    margin-bottom: 15px;
+}
 #content{
     
+    background-image: url('/src/assets/vishwas-katti-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
