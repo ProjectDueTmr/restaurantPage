@@ -7,7 +7,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: black;
+    /* background-color: black; */
 }
 
 header{
@@ -24,7 +24,7 @@ header{
 .title{
     margin-left: 50px;
     font-size: 2rem;
-    color: white;
+    color: red;
 }
 
 nav{
