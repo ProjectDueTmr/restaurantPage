@@ -23,7 +23,7 @@ header{
 
 .title{
     margin-left: 50px;
-    font-size: 2rem;
+    font-size: 3rem;
     color: black;
 }
 
@@ -44,10 +44,15 @@ button{
     padding: 7px 35px;
     font-size: 1.6rem;
 }
+
+
 button:hover{
     margin-bottom: 15px;
     color: white;
 }
+
+
+
 #content{
     
     /* background-image: url('/src/assets/vishwas-katti-unsplash.jpg'); */
@@ -55,4 +60,25 @@ button:hover{
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+}
+
+.title2{
+    border-bottom: 3px solid black;
+    margin: 10px 0 0;
+}
+.title3{
+    border-bottom: 3px solid black;
+}
+.tab{
+    border: 1px solid black;
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.home{
+    
 }
