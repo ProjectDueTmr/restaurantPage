@@ -10,12 +10,16 @@ title.textContent = "Seven";
 title.classList.add('title');
 header.prepend(title);
 
-
-// HOME TAB  
 const content = document.getElementById('content');
+// HOME TAB  
+
 const homeTab = document.createElement('div');
 homeTab.classList.add('home', 'tab');
 content.append(homeTab);
+const homeTitle = document.createElement('h1')
+homeTitle.classList.add('title')
+homeTitle.textContent = 'Home'
+homeTab.append(homeTitle);
 const discDiv = document.createElement('div');
 discDiv.classList.add('discription');
 homeTab.append(discDiv);
@@ -44,6 +48,14 @@ const hoursDiv = document.createElement('div');
 
 
     // MENU TAB
+
+const menuTab = document.createElement('div');
+menuTab.classList.add('menu', 'tab');
+content.append(menuTab);
+const menuTitle = document.createElement('h1')
+menuTitle.classList.add('title')
+menuTitle.textContent = 'Menu'
+menuTab.append(menuTitle);
 
 
 
