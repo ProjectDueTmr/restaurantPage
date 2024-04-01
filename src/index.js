@@ -57,6 +57,16 @@ menuTitle.classList.add('title')
 menuTitle.textContent = 'Menu'
 menuTab.append(menuTitle);
 
+const drinks = document.createElement('h2');
+drinks.classList.add('title2');
+drinks.textContent = 'Drinks';
+menuTab.append(drinks);
+
+const food = document.createElement('h2');
+food.classList.add('title2');
+food.textContent = 'Food';
+menuTab.append(food);
+
 
 
     // CONTACT TAB
