@@ -69,17 +69,52 @@ const menuTitle = document.createElement('h1')
 menuTitle.classList.add('title2')
 menuTitle.textContent = 'Menu'
 menuTab.append(menuTitle);
-
+//DRINKS
 const drinks = document.createElement('h2');
 drinks.classList.add('title3');
 drinks.textContent = 'Drinks';
 menuTab.append(drinks);
 
+//drink 1
+const drinkItem = document.createElement('h3');
+drinkItem.classList.add('item-name');
+drinkItem.textContent = 'pepsi';
+const drinkDisc = document.createElement('p');
+drinkDisc.classList.add('item-disc');
+drinkDisc.textContent = '$3'
+drinks.append(drinkItem, drinkDisc);
+
+//drink2
+const drinkItem2 = document.createElement('h3');
+drinkItem2.classList.add('item-name');
+drinkItem2.textContent = 'cola';
+const drinkDisc2 = document.createElement('p');
+drinkDisc2.classList.add('item-disc');
+drinkDisc2.textContent = '$3'
+drinks.append(drinkItem2, drinkDisc2);
+
+//drink3
+const drinkItem3 = document.createElement('h3');
+drinkItem3.classList.add('item-name');
+drinkItem3.textContent = 'Water';
+const drinkDisc3 = document.createElement('p');
+drinkDisc3.classList.add('item-disc');
+drinkDisc3.textContent = '$2'
+drinks.append(drinkItem3, drinkDisc3);
+
+//FOOD
 const food = document.createElement('h2');
 food.classList.add('title3');
 food.textContent = 'Food';
 menuTab.append(food);
 
+//food 1
+const foodItem = document.createElement('h3');
+foodItem.classList.add('item-name');
+foodItem.textContent = 'Churro';
+const foodDisc = document.createElement('p');
+foodDisc.classList.add('item-disc');
+foodDisc.textContent = '$5';
 
 
     // CONTACT TAB
