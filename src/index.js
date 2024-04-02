@@ -1,6 +1,19 @@
 import _ from 'lodash';
 import './style.css';
 
+
+
+const tabs = document.querySelectorAll('[data-tab-target]');
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        target.classList.add('active');
+    })
+})
+
+
+
+
 // BANNER
 const header = document.querySelector('header');
 header.classList.add('banner');
@@ -15,6 +28,7 @@ const content = document.getElementById('content');
 
 const homeTab = document.createElement('div');
 homeTab.classList.add('home', 'tab');
+homeTab.setAttribute('id', 'home')
 content.append(homeTab);
 const homeTitle = document.createElement('h1')
 homeTitle.classList.add('title2')
@@ -64,6 +78,7 @@ hoursTitle.textContent = 'Work Hours';
 
 const menuTab = document.createElement('div');
 menuTab.classList.add('menu', 'tab');
+menuTab.setAttribute('id', 'menu');
 content.append(menuTab);
 const menuTitle = document.createElement('h1')
 menuTitle.classList.add('title2')
@@ -104,6 +119,8 @@ drinkDisc3.classList.add('item-disc');
 drinkDisc3.textContent = '$2'
 drinks.append(drinkItem3, drinkDisc3);
 
+
+
 //FOOD
 const food = document.createElement('div');
 const foodTitle = document.createElement('h3');
@@ -140,10 +157,12 @@ foodDisc3.textContent = '$10';
 food.append(foodItem3, foodDisc3);
 
 
+
     // CONTACT TAB
 
     const contactTab = document.createElement('div');
     contactTab.classList.add('contact', 'tab');
+    contactTab.setAttribute('id', 'contact');
     content.append(contactTab);
 
     const contactTitle = document.createElement('h1');

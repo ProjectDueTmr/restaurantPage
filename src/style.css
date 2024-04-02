@@ -4,10 +4,13 @@
     margin: 0;
 }
 
+
+
+
 body{
     display: flex;
     flex-direction: column;
-    /* background-color: black; */
+    background-color: black;
 }
 
 header{
@@ -55,7 +58,7 @@ button:hover{
 
 #content{
     
-    /* background-image: url('/src/assets/vishwas-katti-unsplash.jpg'); */
+    background-image: url('/src/assets/vishwas-katti-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -63,23 +66,45 @@ button:hover{
 }
 
 .title2{
-    border-bottom: 3px solid black;
+    /* border-bottom: 3px solid black; */
     margin: 10px 0 0;
     font-size: 2.5rem;
+    text-align: center;
 }
 .title3{
+    font-size: 2.4rem;
     border-bottom: 3px solid black;
 }
 .tab{
-    border: 1px solid black;
+    border: 3px solid black;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 500px;
     height: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 50px;
+    display: none;
+
 }
 
+.tab.active{
+    display: 'block';
+}
 .home{
-    
+    display: none;
+}
+
+.menu{
+}
+
+.item-name{
+    font-size: 1.7rem;
+}
+.item-disc{
+    font-size: 1.4rem;
+}
+.contact{
+    display: none;
 }
