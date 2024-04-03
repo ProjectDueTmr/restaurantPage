@@ -93,7 +93,7 @@ button:hover{
 }
 
 .active[data-tab-content] {
-    display: flex;
+    display: block;
 }
 
 .item-name{
