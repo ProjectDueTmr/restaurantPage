@@ -4,10 +4,18 @@ import './style.css';
 
 
 const tabs = document.querySelectorAll('[data-tab-target]');
+const tabContents = document.querySelectorAll('[data-tab-content');
+
+
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active')}
+            )
+        
         target.classList.add('active');
+        console.log(target);
     })
 })
 
@@ -24,11 +32,13 @@ title.classList.add('title');
 header.prepend(title);
 
 const content = document.getElementById('content');
+
 // HOME TAB  
 
 const homeTab = document.createElement('div');
-homeTab.classList.add('home', 'tab');
+homeTab.classList.add('home', 'tabContent');
 homeTab.setAttribute('id', 'home')
+homeTab.setAttribute('data', 'tab-content')
 content.append(homeTab);
 const homeTitle = document.createElement('h1')
 homeTitle.classList.add('title2')
@@ -77,8 +87,9 @@ hoursTitle.textContent = 'Work Hours';
     // MENU TAB
 
 const menuTab = document.createElement('div');
-menuTab.classList.add('menu', 'tab');
+menuTab.classList.add('menu', 'tabContent');
 menuTab.setAttribute('id', 'menu');
+menuTab.setAttribute('data', 'tab-content')
 content.append(menuTab);
 const menuTitle = document.createElement('h1')
 menuTitle.classList.add('title2')
@@ -161,8 +172,9 @@ food.append(foodItem3, foodDisc3);
     // CONTACT TAB
 
     const contactTab = document.createElement('div');
-    contactTab.classList.add('contact', 'tab');
+    contactTab.classList.add('contact',  'tabContent');
     contactTab.setAttribute('id', 'contact');
+    contactTab.setAttribute('data', 'tab-content')
     content.append(contactTab);
 
     const contactTitle = document.createElement('h1');
