@@ -87,12 +87,19 @@ button:hover{
     gap: 50px;
 }
 
-
-[data-tab-content] {
+#home{
     display: none;
 }
 
-.active[data-tab-content] {
+
+
+.active#home {
+    display: block;
+}
+.active#menu{
+    display: block;
+}
+.active#contact{
     display: block;
 }
 
