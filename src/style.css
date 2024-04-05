@@ -10,7 +10,7 @@
 body{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: black; */
 }
 
@@ -56,11 +56,12 @@ button:hover{
 }
 
 
-
-#tab-content{
+.wrapper{
     background-image: url('/src/assets/vishwas-katti-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+#tab-content{
     width: 100vw;
     height: 100vh;
 }
@@ -110,3 +111,9 @@ button:hover{
     font-size: 1.4rem;
 }
 
+footer{
+    color: white;
+    display: flex;
+   margin: 10px auto;
+   height: 30px;
+}
