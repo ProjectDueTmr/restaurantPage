@@ -114,6 +114,12 @@ button:hover{
 footer{
     color: white;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
    margin: 10px auto;
    height: 30px;
+}
+footer a{
+    color: forestgreen;
 }
